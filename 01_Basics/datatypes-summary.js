@@ -40,3 +40,27 @@ console.log(typeof myFunction);                      // function
 console.log(typeof heros);                           // object
 console.log(typeof anotherid);                       // symbol
 
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myYoutubename = "sachinyadavdotcom"             // primitive datatypes uses Stack memory i.e---
+let anothername = myYoutubename                      // -- we get copy of a value 
+anothername = "chaiaurcode"
+
+console.log(myYoutubename)
+console.log(anothername)
+
+let userOne = {
+    email: "user@google.com",                    //Non-Primitive Datatypes uses Heap memory i.e---
+    upi: "user@ybl"                                 //--- we get refrence value
+}
+
+let userTwo = userOne
+
+userTwo.email = "sachin@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
